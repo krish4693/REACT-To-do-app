@@ -36,3 +36,22 @@
     transform: rotate(360deg);
   }
 }
+
+.header2 {
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+}
+div {display: flex; align-items: center;flex-wrap: wrap;
+background-color: yellow;}
+/* *{
+  padding: 0;
+  margin: 0;
+} */
+p{
+  width: 300px;
+}
+
+@media  screen and all max-width {
+  
+}
