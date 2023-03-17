@@ -1,9 +1,9 @@
 import React from "react";
 import { useState } from "react";
-import "./App.css";
+import "./to-do.css";
 // import HomePage from "./components/screens/HomePage";
 
-const App = () => {
+const Todo = () => {
   const [inputValue, setInputValue] = useState("");
   const [lists, setLists] = useState([]);
 
@@ -45,4 +45,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Todo;
