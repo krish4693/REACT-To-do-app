@@ -21,13 +21,16 @@ const Todo = () => {
     e.preventDefault();
     console.log("refresh prevented");
   }
-
+  const deleteObj=(id)=>{
+    let new_array=lists.filter((item)=>item.id!==id);
+    setLists(new_array)
+  };
   return (
     
-    <div className="main-container">
+    <div className="todo-container  ">
       <h1>To-do-list</h1>
       
-      <div className="add-container">
+      <div className="">
         <form onSubmit={onSubmit}><input placeholder="Enter here"
         onChange={(e)=>{
           setInputValue(e.target.value);
@@ -36,7 +39,7 @@ const Todo = () => {
         
 
         <ul>{lists.map((item,i)=>(
-        <li>{item.name}
+        <li>{item.name}<button onClick={()=>deleteObj(item.id)}>Delete</button>
         </li>
       ))}</ul>
       </div>
